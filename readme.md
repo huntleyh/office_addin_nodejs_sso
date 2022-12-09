@@ -1,6 +1,6 @@
-Changes needed for hosting in your Azure Environment:
+<h1>Changes needed for hosting in your Azure Environment</h1>
 
-App Service Detail
+<b>App Service Detail</b>
 
 OS:
  - Linux OS
@@ -18,7 +18,10 @@ App Settings:
  - SERVER_SOURCE
    Value: <site_url_for_example_https://office-sso.azurewebsites.net>
 
-Code Changes needed:
+<b> Azure AD Changes </b>
+- Update Exposed API in the Application to be your registered App Service URI
+
+<b>Code Changes needed:</b>
 1) /bin/www
 - Replace the following line which loads the dev certs 
 
